@@ -1,6 +1,6 @@
 ﻿namespace Dottor.BlazorApp.MAUIBlazorApp
 {
-    using Dottor.BlazorApp.MAUIBlazorApp.Data;
+    using Dottor.BlazorApp.MAUIBlazorApp.Services;
     using Dottor.BlazorApp.Shared;
     using Microsoft.AspNetCore.Components.WebView.Maui;
 
@@ -22,6 +22,7 @@
 #endif
 
             builder.Services.AddSingleton<IWeatherForecastService, WeatherForecastService>();
+            builder.Services.AddSingleton<INotificationService, NotificationService>();
 
             return builder.Build();
         }

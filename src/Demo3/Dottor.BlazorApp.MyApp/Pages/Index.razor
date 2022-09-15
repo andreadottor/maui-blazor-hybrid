@@ -1,4 +1,5 @@
 ﻿@page "/"
+@inject INotificationService NotificationService
 
 <PageTitle>Index</PageTitle>
 
@@ -7,3 +8,24 @@
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
+
+<hr />
+
+<button class="btn btn-primary" @onclick="ShowAlert">alert</button>
+<button class="btn btn-primary" @onclick="ShowConfirm">confirm</button>
+
+
+@code {
+
+    private async Task ShowAlert()
+    {
+        await NotificationService.ShowAlertAsync("Messaggio in un alert.");
+    }
+
+    private async Task ShowConfirm()
+    {
+        var result = await NotificationService.ShowConfirmAsync("Sicuro?");
+        await NotificationService.ShowAlertAsync($"Hai risposto {result}");
+    }
+
+}

@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo 1 - project template",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dottor.MAUIBlazorApp", "src\Demo1\Dottor.MAUIBlazorApp\Dottor.MAUIBlazorApp.csproj", "{80F906C7-1E65-41D1-9A46-4BF5C266D389}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo 2 - notepad", "Demo 2 - notepad", "{DF75BF95-4D77-49C1-94E4-F16C655846C3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo 2 - notepad - notifications", "Demo 2 - notepad - notifications", "{DF75BF95-4D77-49C1-94E4-F16C655846C3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo 3 - share app", "Demo 3 - share app", "{626FB3D4-D053-4367-A6E3-091172044634}"
 EndProject
@@ -19,9 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dottor.BlazorApp.Client", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dottor.BlazorApp.Shared", "src\Demo3\Dottor.BlazorApp.Shared\Dottor.BlazorApp.Shared.csproj", "{A4CFF5AB-3446-43C1-A0D6-9472A54C152C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dottor.BlazorApp.MAUIBlazorApp", "src\Demo3\Dottor.BlazorApp.MAUIBlazorApp\Dottor.BlazorApp.MAUIBlazorApp.csproj", "{3AAB9441-EC44-44D5-A0EC-09048B11288D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dottor.BlazorApp.MAUIBlazorApp", "src\Demo3\Dottor.BlazorApp.MAUIBlazorApp\Dottor.BlazorApp.MAUIBlazorApp.csproj", "{3AAB9441-EC44-44D5-A0EC-09048B11288D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dottor.BlazorApp.MyApp", "src\Demo3\Dottor.BlazorApp.MyApp\Dottor.BlazorApp.MyApp.csproj", "{4EDFBBBC-7D81-42BC-838F-1A6B8A3FDBCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dottor.BlazorApp.MyApp", "src\Demo3\Dottor.BlazorApp.MyApp\Dottor.BlazorApp.MyApp.csproj", "{4EDFBBBC-7D81-42BC-838F-1A6B8A3FDBCE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
