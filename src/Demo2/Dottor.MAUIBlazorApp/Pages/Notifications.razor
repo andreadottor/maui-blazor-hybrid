@@ -1,0 +1,28 @@
+﻿@page "/notifications"
+
+<h3>Notifications</h3>
+
+<button class="btn btn-primary" @onclick="ShowAlert">Open Alert</button>
+<button class="btn btn-primary" @onclick="ShowConfirm">Open Confirm</button>
+<button class="btn btn-primary"@onclick="ShowActionSheet">Open ActionSheet</button>
+
+@code {
+
+    private async Task ShowAlert()
+    {
+        await Application.Current.MainPage.DisplayAlert("Alert", "Ciao!", "OK");
+    }
+
+    private async Task ShowConfirm()
+    {
+        var result = await Application.Current.MainPage.DisplayAlert("Confirm", "Sei sicuro...?", "Yes", "No");
+        await Application.Current.MainPage.DisplayAlert("Alert", $"Result: {result}", "OK");
+    }
+
+    private async Task ShowActionSheet()
+    {
+        var result = await Application.Current.MainPage.DisplayActionSheet("Dove hai conosciuto XE?", "Cancel", null, "Twitter", "Linkedin");
+        await Application.Current.MainPage.DisplayAlert("ActionSheet", $"Result: {result}", "OK");
+    }
+
+}
