@@ -1,22 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
     <PropertyGroup>
-        <TargetFrameworks>net6.0-ios;net6.0-maccatalyst;net6.0-android</TargetFrameworks>
+        <TargetFrameworks>net6.0-android;net6.0-ios;net6.0-maccatalyst</TargetFrameworks>
+        <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net6.0-windows10.0.19041.0</TargetFrameworks>
         <!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
         <!-- <TargetFrameworks>$(TargetFrameworks);net6.0-tizen</TargetFrameworks> -->
         <OutputType>Exe</OutputType>
-        <RootNamespace>Dottor.BlazorApp.MAUIBlazorApp</RootNamespace>
+        <RootNamespace>Dottor.MAUIBlazorApp</RootNamespace>
         <UseMaui>true</UseMaui>
         <SingleProject>true</SingleProject>
         <ImplicitUsings>enable</ImplicitUsings>
         <EnableDefaultCssItems>false</EnableDefaultCssItems>
 
         <!-- Display name -->
-        <ApplicationTitle>Dottor.BlazorApp.MAUIBlazorApp</ApplicationTitle>
+        <ApplicationTitle>Dottor.MAUIBlazorApp</ApplicationTitle>
 
         <!-- App Identifier -->
-        <ApplicationId>com.companyname.dottor.blazorapp.mauiblazorapp</ApplicationId>
-        <ApplicationIdGuid>B0650C72-EF55-49A7-8472-D49AD4F3FC34</ApplicationIdGuid>
+        <ApplicationId>com.companyname.dottor.mauiblazorapp</ApplicationId>
+        <ApplicationIdGuid>3DBF4144-D8A6-4905-B2BB-818AE4A108CE</ApplicationIdGuid>
 
         <!-- Versions -->
         <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -28,10 +29,6 @@
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
         <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
-    </PropertyGroup>
-
-    <PropertyGroup>
-      <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net6.0-windows10.0.19041.0</TargetFrameworks>
     </PropertyGroup>
 
     <ItemGroup>
@@ -50,18 +47,6 @@
 
         <!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
         <MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\Dottor.BlazorApp.MyApp\Dottor.BlazorApp.MyApp.csproj" />
-      <ProjectReference Include="..\Dottor.BlazorApp.Shared\Dottor.BlazorApp.Shared.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Content Update="wwwroot\index.html">
-        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      </Content>
     </ItemGroup>
 
 </Project>
