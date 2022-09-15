@@ -1,4 +1,7 @@
-# mauiDEMO: .NET MAUI Blazor app
+# .NET MAUI Blazor app
+
+Demo about *Hybrid web apps with Blazor* (2022.09.16)
+- link: https://www.xedotnet.org/eventi/net-maui/
 
 ## DEMO 1
 
