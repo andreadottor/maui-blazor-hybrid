@@ -2,6 +2,7 @@
 {
     using Dottor.MAUIBlazorApp.Data;
     using Microsoft.AspNetCore.Components.WebView.Maui;
+    using Microsoft.Extensions.Logging;
 
     public static class MauiProgram
     {
@@ -16,8 +17,10 @@
                 });
 
             builder.Services.AddMauiBlazorWebView();
+
 #if DEBUG
-		builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Logging.AddDebug();
 #endif
 
             builder.Services.AddSingleton<WeatherForecastService>();
