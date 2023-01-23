@@ -5,8 +5,6 @@ VisualStudioVersion = 17.4.32912.340
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo 1 - project template", "Demo 1 - project template", "{26431916-5C6C-4EF4-B4C4-E516120C7D6A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dottor.MAUIBlazorApp", "src\Demo1\Dottor.MAUIBlazorApp\Dottor.MAUIBlazorApp.csproj", "{80F906C7-1E65-41D1-9A46-4BF5C266D389}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo 2 - notepad - notifications", "Demo 2 - notepad - notifications", "{DF75BF95-4D77-49C1-94E4-F16C655846C3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo 4 - share app", "Demo 4 - share app", "{626FB3D4-D053-4367-A6E3-091172044634}"
@@ -25,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dottor.BlazorApp.MyApp", "s
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo 3 - tabs", "Demo 3 - tabs", "{F31A7D9B-A10B-4A91-99E2-2878D89A224D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dottor.MAUIBlazorApp", "src\Demo3\Dottor.MAUIBlazorApp\Dottor.MAUIBlazorApp.csproj", "{788E26D1-9309-4432-918E-B847987E2F3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dottor.MAUIBlazorApp", "src\Demo3\Dottor.MAUIBlazorApp\Dottor.MAUIBlazorApp.csproj", "{788E26D1-9309-4432-918E-B847987E2F3E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9AD2FC98-4615-4643-AB95-364F7F179B40}"
 	ProjectSection(SolutionItems) = preProject
@@ -33,18 +31,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dottor.MAUIBlazorApp", "src\Demo1\Dottor.MAUIBlazorApp\Dottor.MAUIBlazorApp.csproj", "{2D36D69E-BF98-4025-96AC-AF3CD1C38851}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{80F906C7-1E65-41D1-9A46-4BF5C266D389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{80F906C7-1E65-41D1-9A46-4BF5C266D389}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{80F906C7-1E65-41D1-9A46-4BF5C266D389}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{80F906C7-1E65-41D1-9A46-4BF5C266D389}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{80F906C7-1E65-41D1-9A46-4BF5C266D389}.Release|Any CPU.Build.0 = Release|Any CPU
-		{80F906C7-1E65-41D1-9A46-4BF5C266D389}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{6A91F094-3876-43DA-8AC1-08C4A947FF72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6A91F094-3876-43DA-8AC1-08C4A947FF72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A91F094-3876-43DA-8AC1-08C4A947FF72}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
@@ -79,12 +73,17 @@ Global
 		{788E26D1-9309-4432-918E-B847987E2F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{788E26D1-9309-4432-918E-B847987E2F3E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{788E26D1-9309-4432-918E-B847987E2F3E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2D36D69E-BF98-4025-96AC-AF3CD1C38851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D36D69E-BF98-4025-96AC-AF3CD1C38851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D36D69E-BF98-4025-96AC-AF3CD1C38851}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2D36D69E-BF98-4025-96AC-AF3CD1C38851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D36D69E-BF98-4025-96AC-AF3CD1C38851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D36D69E-BF98-4025-96AC-AF3CD1C38851}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{80F906C7-1E65-41D1-9A46-4BF5C266D389} = {26431916-5C6C-4EF4-B4C4-E516120C7D6A}
 		{6A91F094-3876-43DA-8AC1-08C4A947FF72} = {DF75BF95-4D77-49C1-94E4-F16C655846C3}
 		{842AE802-AD9C-4938-A5F8-89E7787CDCF6} = {626FB3D4-D053-4367-A6E3-091172044634}
 		{2001AF2B-8EA5-4E7B-92E1-2976DC0A5538} = {626FB3D4-D053-4367-A6E3-091172044634}
@@ -92,6 +91,7 @@ Global
 		{3AAB9441-EC44-44D5-A0EC-09048B11288D} = {626FB3D4-D053-4367-A6E3-091172044634}
 		{4EDFBBBC-7D81-42BC-838F-1A6B8A3FDBCE} = {626FB3D4-D053-4367-A6E3-091172044634}
 		{788E26D1-9309-4432-918E-B847987E2F3E} = {F31A7D9B-A10B-4A91-99E2-2878D89A224D}
+		{2D36D69E-BF98-4025-96AC-AF3CD1C38851} = {26431916-5C6C-4EF4-B4C4-E516120C7D6A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {39E83FE0-D58A-496B-B74D-BF1B6183D07B}

@@ -1,5 +1,8 @@
 # .NET MAUI Blazor app
 
+Demo about *Hybrid web apps with Blazor* (2023.01.28)
+- link: https://netconf2022.1nn0va.it/
+
 Demo about *Hybrid web apps with Blazor* (2022.09.16)
 - link: https://www.xedotnet.org/eventi/net-maui/
 
